@@ -36,6 +36,10 @@ TARGET_NO_BOOTLOADER := true
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=flounder
 
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+
+
 TARGET_NO_RADIOIMAGE := true
 
 TARGET_BOARD_PLATFORM := tegra132

@@ -11,12 +11,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common Glaze stuff.
+$(call inherit-product, vendor/glaze/config/common_full.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
@@ -43,6 +39,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="volantis-user 7.1.1 N4F26T 3687331 release-keys"
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_flounder
+PRODUCT_NAME := glaze_flounder
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 9
